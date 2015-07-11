@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>FAR</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <script src="assets/libs/modernizr/modernizr.js"></script>
+  <script data-main="app/main.js" src="assets/libs/requirejs/require.js"></script>
+  <base href="/">
+</head>
+<body>
+  <!-- ui router view -->
+  <div ui-view></div>
+
+  <!-- Test if foundation is working -->
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel1">Tab 1</a></li>
+        <li class="tab-title"><a href="#panel2">Tab 2</a></li>
+        <li class="tab-title"><a href="#panel3">Tab 3</a></li>
+      </ul>
+      <div class="tabs-content">
+        <div class="content active" id="panel1">
+          <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
+        </div>
+        <div class="content" id="panel2">
+          <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+        </div>
+        <div class="content" id="panel3">
+          <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

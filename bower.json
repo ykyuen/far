@@ -1,0 +1,53 @@
+{
+  "name": "far",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-ui-router": "~0.2.15",
+    "requirejs": "~2.1.18",
+    "requirejs-domready": "~2.0.1",
+    "foundation": "~5.5.2",
+    "modernizr": "~2.8.3",
+    "fastclick": "~1.0.6",
+    "jquery": "~2.1.4",
+    "jquery.cookie": "~1.4.1",
+    "jquery-placeholder": "~2.1.2",
+    "bourbon": "~4.2.3"
+  },
+  "devDependencies": {},
+  "appPath": "www",
+  "authors": [
+    "Ying Kit Yuen <yingkityuen@gmail.com>"
+  ],
+  "license": "BSD",
+  "overrides": {
+    "requirejs-domready": {
+      "main": [
+        "domReady.js"
+      ]
+    },
+    "foundation": {
+      "main": [
+        "js/foundation.js",
+        "scss/foundation/**",
+        "scss/normalize.scss"
+      ]
+    },
+    "modernizr": {
+      "main": [
+        "modernizr.js"
+      ]
+    },
+    "bourbon": {
+      "main": [
+        "app/assets/stylesheets/_bourbon.scss",
+        "app/assets/stylesheets/_bourbon-deprecated-upcoming.scss",
+        "app/assets/stylesheets/addons/*",
+        "app/assets/stylesheets/css3/*",
+        "app/assets/stylesheets/functions/*",
+        "app/assets/stylesheets/helpers/*",
+        "app/assets/stylesheets/settings/*"
+      ]
+    }
+  }
+}

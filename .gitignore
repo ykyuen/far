@@ -1,0 +1,8 @@
+.DS_Store
+
+node_modules
+bower_components
+
+/www/assets/css
+/www/assets/libs
+/www/assets/scss/foundation
