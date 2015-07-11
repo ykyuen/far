@@ -2,6 +2,14 @@
 
 ## [Outstanding problem](#gulp-optimize)
 
+## NodeJS Version
+
+**Node >= 0.12**
+
+It seems that the node-sass package is having problem with node version 0.11.
+
+Node 0.10 may work.
+
 ## Getting Started
 
 1. Check out the project.
