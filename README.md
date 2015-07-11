@@ -81,6 +81,10 @@ I follow the [Drupal ZURB Foundation](https://www.drupal.org/project/zurb_founda
 
 As mentioned before, you could also update the *www/assets/scss/foundation/_settings.scss* to override the default Foundation variables.
 
+Instead of using the standard foundation syntax. It is suggest to use angular directives to implement those Foundation components otherwise you have to re-initialize the foundation everytime when the view is updated. Please refer to the following post about how to setup Foundation directives in AngularJS.
+
+[AngularJS directives of Foundation | Eureka!](http://eureka.ykyuen.info/2014/07/17/angularjs-directives-of-foundation/)
+
 ## Routing Framework
 
 [AngularUI Router](https://github.com/angular-ui/ui-router)
