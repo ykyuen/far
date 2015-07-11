@@ -71,7 +71,7 @@ I need help as i have tried both [gulp-requirejs-optimize](https://www.npmjs.com
 
 ## Development with Foundation
 
-I follow the [Drupal ZURB Foundation](https://www.drupal.org/project/zurb_foundation) theme setup for the [SMACSS](https://smacss.com/) folder structure. You should add your custom **.scss** files in the follower folders under the SMACSS](https://smacss.com/) architecture and import them in **app.scss**.
+I follow the [Drupal ZURB Foundation](https://www.drupal.org/project/zurb_foundation) theme setup for the [SMACSS](https://smacss.com/) folder structure. You should add your custom **.scss** files in the following folders under the SMACSS](https://smacss.com/) architecture and import them in **app.scss**.
 
 * www/assets/scss/base
 * www/assets/scss/layout
