@@ -1,15 +1,16 @@
 /*********************
  *   Node Packages   *
  *********************/
-var gulp              = require('gulp');
-var connect           = require('gulp-connect');
-var sass              = require('gulp-sass');
-var sourcemaps        = require('gulp-sourcemaps');
-var uglify            = require('gulp-uglify');
-var util              = require('gulp-util');
-var del               = require('del');
-var mainBowerFiles    = require('main-bower-files');
-var runSequence       = require('run-sequence');
+
+var gulp           = require('gulp');
+var connect        = require('gulp-connect');
+var sass           = require('gulp-sass');
+var sourcemaps     = require('gulp-sourcemaps');
+var uglify         = require('gulp-uglify');
+var util           = require('gulp-util');
+var del            = require('del');
+var mainBowerFiles = require('main-bower-files');
+var runSequence    = require('run-sequence');
 
 
 
@@ -18,6 +19,7 @@ var runSequence       = require('run-sequence');
 /************************
  *   Global Variables   *
  ************************/
+
 var appPath    = 'www/app';
 var assetsPath = 'www/assets';
 
@@ -102,7 +104,8 @@ gulp.task('sass', function() {
   util.log('  [ COMPILE SASS ]');
   return gulp.src(scssPath + '/app.scss')
     .pipe(sourcemaps.init())
-      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(sass({outputStyle: 'compressed'})
+        .on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(cssPath))
     .pipe(connect.reload());
@@ -198,6 +201,7 @@ gulp.task('connect:prod', ['build:prod'], function() {
 /********************************
  *   Common and Default Tasks   *
  ********************************/
+
 gulp.task('dev',     ['connect:dev', 'watch']);
 gulp.task('prod',    ['connect:prod']);
 gulp.task('default', ['dev']);
