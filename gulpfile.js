@@ -148,6 +148,7 @@ gulp.task('optimize', function() {
  * Build for development
  */ 
 gulp.task('build:dev', function(cb) {
+  util.log('  [ BUILD:DEV ]');
   runSequence(
     'clean',
     'libs',
@@ -161,6 +162,7 @@ gulp.task('build:dev', function(cb) {
  * Build for production
  */
 gulp.task('build:prod', function(cb) {
+  util.log('  [ BUILD:PROD ]');
   runSequence(
     'clean',
     'libs',
